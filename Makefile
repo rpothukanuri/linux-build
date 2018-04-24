@@ -197,6 +197,6 @@ kernel-update:
 
 shell:
 	rm kernel
-	ln -s linux_kernel kernel
+	ln -s linux-kernel/ kernel
 	docker build -q -t rock64-linux:build-environment environment/
 	docker run -it -v $(CURDIR):$(CURDIR) -w $(CURDIR) rock64-linux:build-environment
