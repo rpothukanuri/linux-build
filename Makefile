@@ -196,6 +196,7 @@ kernel-update:
 	rsync --partial --checksum -av tmp/linux_modules/lib/ root@$(REMOTE_HOST):$(REMOTE_DIR)/lib
 
 shell:
+	rm kernel
 	ln -s linux_kernel kernel
 	docker build -q -t rock64-linux:build-environment environment/
 	docker run -it -v $(CURDIR):$(CURDIR) -w $(CURDIR) rock64-linux:build-environment
