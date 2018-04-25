@@ -1,5 +1,6 @@
 /build
 /kernel
+/linux-kernel
 /kernel-mainline
 /out
 /rkbin
