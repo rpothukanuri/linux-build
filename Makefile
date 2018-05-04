@@ -3,7 +3,7 @@ export RELEASE ?= 1
 export BOOT_TOOLS_BRANCH ?= master
 export KERNEL_DIR ?= kernel
 
-KERNEL_EXTRAVERSION ?= -rockchip-checkpoint-0.3-$(RELEASE)
+KERNEL_EXTRAVERSION ?= -rockchip-checkpoint-3-$(RELEASE)
 KERNEL_DEFCONFIG ?= rockchip_linux_defconfig
 KERNEL_MAKE ?= make -C $(KERNEL_DIR) \
 	EXTRAVERSION=$(KERNEL_EXTRAVERSION) \
